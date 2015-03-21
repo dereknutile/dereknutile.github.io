@@ -1,14 +1,39 @@
-# Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
 
 # Build settings
 markdown: kramdown
+
+# MockMach -- sounds like mäk mäk (which rhymes with what a chiken would say)
+title: "Derek Nutile"
+
+# replace with the mockups main email address
+email: hello@dereknutile.com
+
+# brief description for the site
+description: "Full stack web developer"
+
+# one line short description for the site
+tagline: "code | ship | rinse | repeat"
+
+# leave empty unless you need to store the mockup in a subfolder
+# don't use a trailing slash
+baseurl: ""
+
+# replace with the domain of the mockup
+url: "http://dereknutile.com/"
+
+# site favicon
+favicon: "/assets/ico/favicon.png"
+
+# contacts
+phone: "15036571842"
+phone-string: "503-657-1842"
+facebook-username: "dereknutile"
+twitter-username: "dereknutile"
+google-plus-username: "dereknutile"
+
+# analytic settings
+google-analytics: "UA-15896808-1"
+
+# Jekyll build settings
+markdown: kramdown
+permalink: pretty
