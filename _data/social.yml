@@ -1,0 +1,35 @@
+
+- url: https://twitter.com/dereknutile
+  icon: fa fa-1x fa-twitter
+  large_icon: fa fa-2x fa-twitter
+  title: Twitter
+
+- url: http://www.linkedin.com/pub/derek-nutile/5/454/53a/
+  icon: fa fa-1x fa-linkedin
+  large_icon: fa fa-2x fa-linkedin
+  title: LinkedIn
+
+- url: https://plus.google.com/+DerekNutile
+  icon: fa fa-1x fa-google-plus
+  large_icon: fa fa-2x fa-google-plus
+  title: GooglePlus
+
+- url: http://stackoverflow.com/users/1410480/derek-nutile
+  icon: fa fa-1x fa-stack-overflow
+  large_icon: fa fa-2x fa-stack-overflow
+  title: StackoverFlow
+
+- url: http://codepen.io/dereknutile/
+  icon: fa fa-1x fa-codepen
+  large_icon: fa fa-2x fa-codepen
+  title: Codepen
+
+- url: https://bitbucket.org/dereknutile
+  icon: fa fa-1x fa-bitbucket
+  large_icon: fa fa-2x fa-bitbucket
+  title: BitBucket
+
+- url: https://github.com/dereknutile
+  icon: fa fa-1x fa-github
+  large_icon: fa fa-2x fa-github
+  title: Github

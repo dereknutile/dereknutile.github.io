@@ -1,0 +1,188 @@
+
+- url: "http://www.w3.org/"
+  title: "HTML, CSS, Javascript"
+  category: "web development"
+
+- url: "http://jquery.com/"
+  title: "jQuery"
+  category: "javascript"
+
+- url: "http://lesscss.org/"
+  title: "LESS"
+  category: "css"
+
+- url: "http://sass-lang.com/"
+  title: "SASS & SCSS"
+  category: "css scss"
+
+- url: "http://www.php.net/"
+  title: "PHP"
+  category: "programming language"
+
+- url: "https://getcomposer.org/"
+  title: "Composer"
+  category: "php package manager"
+
+- url: "http://nodejs.org/"
+  title: "NodeJS"
+  category: "javascript platform"
+
+- url: "https://angularjs.org/"
+  title: "AngularJs"
+  category: "javascript mvc framework"
+
+- url: "http://emberjs.com/"
+  title: "EmberJs"
+  category: "javascript mvc framework"
+
+- url: "http://jekyllrb.com/"
+  title: "Jekyll"
+  category: "html markup"
+
+- url: "http://gruntjs.com/"
+  title: "GruntJs"
+  category: "javascript automation"
+
+- url: "http://bower.io/"
+  title: "Bower"
+  category: "package manager"
+
+- url: "https://www.python.org/"
+  title: "Python"
+  category: "programming language"
+
+- url: "https://www.djangoproject.com/"
+  title: "Django"
+  category: "python framework"
+
+- url: "https://www.ruby-lang.org/"
+  title: "Ruby"
+  category: "programming language"
+
+- url: "http://rubyonrails.org/"
+  title: "Rails (ROR)"
+  category: "ruby framework"
+
+- url: ""
+  title: "Powershell, cscript, vbs, batch, bash"
+  category: "scripting"
+
+- url: ""
+  title: "SVN, GIT, HG, beanstalk"
+  category: "source control"
+
+- url: "http://ellislab.com/codeigniter"
+  title: "CodeIgniter"
+  category: "php framework"
+
+- url: "http://laravel.com/"
+  title: "Laravel"
+  category: "php framework"
+
+- url: "http://framework.zend.com/"
+  title: "Zend Framework"
+  category: "php framework"
+
+- url: "http://magento.com/"
+  title: "Magento"
+  category: "php ecommerce"
+
+- url: "http://wordpress.org/"
+  title: "Wordpress"
+  category: "php cms"
+
+- url: "https://drupal.org/"
+  title: "Drupal"
+  category: "php cms"
+
+- url: ""
+  title: "DNS"
+  category: "devops server networking"
+
+- url: "http://aws.amazon.com/"
+  title: "Amazon AWS"
+  category: "web service cloud"
+
+- url: "http://www.rackspace.com/"
+  title: "Rackspace"
+  category: "web service cloud"
+
+- url: "https://www.digitalocean.com/"
+  title: "DigitalOcean"
+  category: "web service cloud"
+
+- url: "http://saml.xml.org/"
+  title: "SAML OASIS"
+  category: "xml data"
+
+- url: "http://www.postfix.org/"
+  title: "Postfix/SMTP"
+  category: "mail postfix sendmail"
+
+- url: "http://httpd.apache.org/"
+  title: "Apache"
+  category: "web server"
+
+- url: "http://nginx.org/"
+  title: "Nginx"
+  category: "web server"
+
+- url: "http://www.mysql.com/"
+  title: "MySQL"
+  category: "sql database"
+
+- url: "http://www.postgresql.org/"
+  title: "Postgres"
+  category: "sql database"
+
+- url: "http://redis.io/"
+  title: "Redis"
+  category: "sql database nosql"
+
+- url: "http://www.mongodb.org/"
+  title: "Mongo DB"
+  category: "sql database nosql"
+
+- url: "http://www.microsoft.com/net"
+  title: ".net"
+  category: "windows programming"
+
+- url: "http://www.microsoft.com/sql"
+  title: "Microsoft SQL Server"
+  category: "sql database"
+
+- url: "http://technet.microsoft.com/en-us/library/ms141026.aspx"
+  title: "Microsoft SQL SSIS"
+  category: "sql data programming"
+
+- url: "https://www.docker.com/"
+  title: "Docker"
+  category: "package distributed automation virtual"
+
+- url: "http://www.vagrantup.com/"
+  title: "Vagrant"
+  category: "environment distributed automation virtual"
+
+- url: "http://handlebarsjs.com/"
+  title: "HandlebarsJs"
+  category: "semantic template mustache javascript"
+
+- url: "http://liquidmarkup.org/"
+  title: "Liquid"
+  category: "ruby markup template shopify mustache"
+
+- url: "http://mean.io/"
+  title: "MEAN Stack"
+  category: "mongo express angular node framework"
+
+- url: "http://expressjs.com/"
+  title: "ExpressJS"
+  category: "node framework javascript"
+
+- url: "https://www.heroku.com"
+  title: "Heroku"
+  category: "cloud platform virtual"
+
+- url: "https://ellislab.com/expressionengine"
+  title: "Expression Engine"
+  category: "php framework cms"
