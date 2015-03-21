@@ -1,0 +1,21 @@
+
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li>
+    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+    <h2>
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </h2>
+  </li>
+  {% endfor %}
+</ul><!-- /.post-list -->
+
+
+<p class="all-posts">
+  <a href="{{ "/posts/" | prepend: site.baseurl }}">All Posts</a>
+</p>
+
+<p class="rss">
+  <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
+</p>
