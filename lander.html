@@ -7,13 +7,23 @@ layout: lander
   <div class="row">
     <h1 class="title">{{ site.title }}</h1>
   </div><!-- /.row -->
+
+  <div class="row">
+    <ul class="homepage-navigation-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about/">About</a></li>
+    </ul>
+  </div><!-- /.row -->
 </div><!-- /.container -->
 </section>
 
 <section class="palette">
 <div class="container">
   <div class="row">
-  <p>Website currently being updated.</p>
+  <h1 class="page-heading">Posts</h1>
+
+  {% include common/recent_posts.html %}
+
   </div><!-- /.row -->
 </div><!-- /.container -->
 </section>
