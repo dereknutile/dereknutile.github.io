@@ -4,30 +4,346 @@
 @charset "utf-8";
 
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* fonts
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-// Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+/* common or base font */
+@import url(http://fonts.googleapis.com/css?family=Anton);
+$fontBasePrimary: 'Anton', Helvetica, Arial, sans-serif;
 
-$spacing-unit:     30px;
+/* secondary or print font */
+@import url(http://fonts.googleapis.com/css?family=Arvo);
+$fontPrintPrimary: 'Arvo', Times, serif;
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+$fontPrintSecondary: 'Roboto', Times, serif;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+/* font for script, cursive, or fancy rendering */
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+$fontFancyPrimary: 'Lobster';
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+/* technical, typewriter, monospace font typically used for pre or code tags */
+@import url(http://fonts.googleapis.com/css?family=Inconsolata);
+$fontMonoPrimary: 'Inconsolata', Courier, monospace;
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* colors
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* base white or black colors or variants */
+$colorLight: #fdfdfd; /*pale white*/
+$colorDark: #03060b; /*dark slate*/
+$colorDarkSecondary: #001;
+
+$colorPrimary: #4882ad; /*steel blue*/
+$colorSecondary: #aaaaaa; /*gray*/
+$colorHighlightPrimary: #bf9000; /*medium yellow*/
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* resets
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body { height: 100%; }
+
+body {
+  font-family: $fontBasePrimary;
+}
+
+body.body-navbar-padding {
+  /* bump for Bootstrap menu  navigation */
+   padding-top: 64px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+}
+
+p, ul, ol {
+  font-size: 16px;
+  font-weight: 100;
+  font-family: $fontPrintSecondary;
+  line-height: 24px;
+}
+
+/* links */
+a { color: $colorHighlightPrimary; }
+a:hover { color: $colorHighlightPrimary; }
+a:visited { color: $colorHighlightPrimary; }
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* input[type=search] {
+  font-size: 20px;
+  font-weight: 100;
+  font-family: $fontPrintPrimary;
+}
+strap overrides
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.container {
+}
+
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.container-narrow {
+  width: 760px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+/*  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0 18px 0 18px;*/
+}
+
+/*.row-stack {
+  padding: 12px 6px 12px 6px;
+  margin-bottom: 24px;
+  border: 0 none;
+}*/
+
+/* override to .col class padding */
+.cancel-col-padding {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.navbar-default .navbar-brand {
+}
+
+.navbar-brand {
+  font-family: $fontFancyPrimary;
+  font-weight: 100;
+  font-size: 26px;
+}
+
+.navbar-phone a {
+  float: right;
+  height: 50px;
+  padding: 15px 5px;
+  line-height: 20px;
+  font-weight: 100;
+  color: $colorPrimary;
+}
+
+.navbar-phone a:hover {
+  text-decoration: none;
+  color: $colorHighlightPrimary;
+}
+
+#nav-links {
+  font-family: $fontPrintPrimary;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.btn {
+  border-radius: 0px;
+  font-size: 20px;
+}
+
+.btn-primary {
+  color: $colorLight;
+  background-color: lighten( $colorPrimary, 22% );
+  border-color: darken( $colorPrimary, 22% );
+}
+
+.btn-primary:hover {
+  color: $colorDark;
+  background-color: $colorLight;
+}
+
+.btn-lg, .btn-group-lg>.btn {
+  padding: 12px;
+  font-size: 20px;
+}
+
+#footer {
+}
+
+.jumbotron {
+}
+
+.lead {
+}
+
+.page-header {
+  border-bottom: none;
+  font-family: $fontBasePrimary;
+}
+
+.navbar {
+}
+
+.navbar-default {
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 6px 12px;
+  font-size: 18px;
+  font-weight: 100;
+  font-family: $fontPrintPrimary;
+  line-height: 1.42857143;
+  color: $colorPrimary;
+  background-color: $colorLight;
+  background-image: none;
+  border: 1px solid $colorPrimary;
+  border-radius: 0px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+/*****************************************************************************/
+/* footer
+/*****************************************************************************/
+
+footer {
+  background-color: $colorDark;
+  background-attachment: relative;
+  background-position: top center;
+  min-height: 350px;
+  width: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 64px 0 48px;
+  color: $colorLight;
+  font-family: $fontPrintSecondary;
+}
+
+footer p, footer ul, footer ol, footer address {
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 0px;
+}
+
+footer h3 {
+  font-family: $fontBasePrimary;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#footer a {
+  color: $colorHighlightPrimary;
+}
+
+#footer-social a {
+  color: $colorLight;
+}
+
+#footer-links a {
+  color: $colorLight;
+}
+
+#footer-links .active a {
+  text-decoration: underline;
+}
+
+.footer-copyright {
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 100;
+  color: $colorPrimary;
+}
+
+/*****************************************************************************/
+/* palettes
+/*****************************************************************************/
+
+.palette {}
+
+.palette h2 {
+  font-size: 48px;
+  font-weight: 100;
+}
+
+@media (max-width: 767px) {
+
+  .palette h2 {
+    font-size: 36px;
+    font-weight: 100;
+  }
+}
+
+.palette h3 {
+  font-size: 30px;
+  font-weight: 100;
+}
+
+
+/*****************************************************************************/
+/* sections
+/*****************************************************************************/
+
+section {
+  margin: 0;
+  padding: 0;
+}
+
+section ul, section ol {
+  padding-left: 36px;
+}
+
+section h1 {
+  font-size: 48px;
+  font-weight: 100;
+  padding: 3px 0 20px 0;
+  font-family: $fontPrintPrimary;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+
+  section h1 {
+    font-size: 30px;
+    font-weight: 100;
+    padding: 3px 0 12px 0;
+    font-family: $fontPrintPrimary;
+    text-transform: uppercase;
+  }
+}
+
+section h2 {}
+
+section h3 {}
+
+section h4 {}
+
+section h5 {}
+
+
+/*****************************************************************************/
+/*****************************************************************************/
+/*****************************************************************************/
 
 // Width of the content area
 $content-width:    800px;
-
 $on-palm:          600px;
 $on-laptop:        800px;
-
-
 
 // Using media queries with like this:
 // @include media-query($on-palm) {
@@ -41,12 +357,3 @@ $on-laptop:        800px;
         @content;
     }
 }
-
-
-
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
