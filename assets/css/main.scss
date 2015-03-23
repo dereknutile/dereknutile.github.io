@@ -321,8 +321,8 @@ footer {
 
 footer p.copyright {
   text-align: center;
-  font-size: 14px;
-  color: $colorLight;
+  font-size: 13px;
+  color: darken( $colorLight, 10% );
 }
 
 /*****************************************************************************/
