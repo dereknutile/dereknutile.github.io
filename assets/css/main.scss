@@ -4,6 +4,25 @@
 @charset "utf-8";
 
 
+/*// Width of the content area
+$content-width: 800px;
+$on-palm: 600px;
+$on-laptop: 800px;
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}*/
+
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* fonts
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -32,11 +51,11 @@ $fontMonoPrimary: 'Inconsolata', Courier, monospace;
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* base white or black colors or variants */
-$colorLight: #fdfdfd; /*pale white*/
-$colorDark: #03060b; /*dark slate*/
+$colorLight: #839496; /*muted color*/
+$colorDark: #002a35; /*solarized dark*/
 $colorDarkSecondary: #001;
 
-$colorPrimary: #4882ad; /*steel blue*/
+$colorPrimary: #333; /*steel blue*/
 $colorSecondary: #aaaaaa; /*gray*/
 $colorHighlightPrimary: #bf9000; /*medium yellow*/
 
@@ -97,10 +116,74 @@ strap overrides
   margin-right: 0px;
 }
 
+$container-narrow-width: 760px;
+
 .container-narrow {
-  width: 760px;
+  width: $container-narrow-width;
   margin-right: auto;
   margin-left: auto;
+}
+
+$landing-page-width: 700px;
+$landing-page-height: 280px;
+
+.landing-page {
+  width: $landing-page-width;
+  min-height: $landing-page-height;
+}
+
+.landing-title {
+  font-size: 36px;
+  font-weight: 200;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: $fontPrintPrimary;
+  text-transform: none;
+  text-align: center;
+}
+
+.landing-intro {
+  font-size: 24px;
+  font-weight: 100;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-family: $fontFancyPrimary;
+  text-transform: none;
+  text-align: center;
+}
+
+.homepage-navigation-links {
+  width: $landing-page-width;
+  top: 400px;
+  position: absolute;
+  text-align: center;
+}
+
+.homepage-navigation-links-list {
+  padding-top: 9px;
+  font-size: 12px;
+  text-transform: lowercase;
+}
+
+@media (max-width: 767px) {
+  .landing-page{
+    width: 100%;
+    min-height: 200px;
+  }
+
+  .landing-title {
+    font-size: 30px;
+    font-weight: 200;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .landing-intro {
+    font-size: 22px;
+    font-weight: 100;
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
 }
 
 .row {
@@ -109,11 +192,11 @@ strap overrides
   padding: 0 18px 0 18px;*/
 }
 
-/*.row-stack {
-  padding: 12px 6px 12px 6px;
+.row-stack {
+/*  padding: 12px 6px 12px 6px;
   margin-bottom: 24px;
-  border: 0 none;
-}*/
+  border: 0 none;*/
+}
 
 /* override to .col class padding */
 .cancel-col-padding {
@@ -175,6 +258,7 @@ strap overrides
 }
 
 .jumbotron {
+
 }
 
 .lead {
@@ -274,7 +358,21 @@ footer h3 {
 /* palettes
 /*****************************************************************************/
 
-.palette {}
+.palette {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.palette-jumbo {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.palette-large {
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+}
 
 .palette h2 {
   font-size: 48px;
@@ -282,7 +380,6 @@ footer h3 {
 }
 
 @media (max-width: 767px) {
-
   .palette h2 {
     font-size: 36px;
     font-weight: 100;
@@ -302,6 +399,8 @@ footer h3 {
 section {
   margin: 0;
   padding: 0;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 section ul, section ol {
@@ -335,25 +434,9 @@ section h4 {}
 
 section h5 {}
 
-
-/*****************************************************************************/
-/*****************************************************************************/
-/*****************************************************************************/
-
-// Width of the content area
-$content-width:    800px;
-$on-palm:          600px;
-$on-laptop:        800px;
-
-// Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+section.big-screen{
+  padding-top: 88px;
+  padding-bottom: 88px;
+  background-color: $colorDark;
+  color: $colorLight;
 }
