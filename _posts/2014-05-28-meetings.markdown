@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "Purposeful Meetings"
+header: "Purposeful Meetings"
+navbar: "blog"
+date:   2014-05-28 06:06:45
+permalink: /blog/purposeful-meetings
+categories: meetings project management resource schedule
+published: false
+---
+
+<a href="http://www.paulgraham.com/makersschedule.html" target="_blank">Paul Graham</a>, and several others, have been prolific on the topic of time management and resourcing relative to development, so I won't elaborate further about "why" developers mostly despise meeting.  But I need to say this:
+
+ > Meetings should have a purpose.
+
+Meetings should meet one or both of the following two credentials:
+
+ * End with an "action item" for all attendees.
+ * Provide valuable, tangible, information for all attendees.
+
+To become a better meeting organizer, the person creating the meeting should always review the meeting to see if either credential above was met for each attendee.  And please learn.  Over time, the organizer should get more effective at calling meetings and more accurate at organizing the attendees.
+
