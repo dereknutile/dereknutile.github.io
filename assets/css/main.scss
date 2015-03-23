@@ -38,7 +38,7 @@ $colorBlack: #27343d; /*dark slate*/
 
 $colorPrimary: #222222; /*black-gray*/
 $colorSecondary: #4882ad; /*steel blue*/
-$colorHighlightPrimary: #bf9000; /*medium yellow*/
+$colorHighlightPrimary: #ddd;
 $colorHighlightSecondary: #eee;
 
 
@@ -68,22 +68,20 @@ p, ul, ol {
 }
 
 /* links */
-a { color: $colorHighlightPrimary; }
+a { color: lighten( $colorBlack, 8% ); }
 a:hover {
-  color: darken( $colorHighlightPrimary, 15% );
+  color: lighten( $colorDark, 15% );
   text-decoration: none;
 }
-a:visited { color: $colorHighlightPrimary; }
+a:visited { color: lighten( $colorBlack, 8% ); }
 
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* input[type=search] {
-  font-size: 20px;
-  font-weight: 100;
-  font-family: $fontPrintPrimary;
+.content{
+  border-top: 64px solid $colorDark;
 }
-strap overrides
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/*****************************************************************************/
+/* Bootstrap overrides
+/*****************************************************************************/
 .container {
 }
 
@@ -102,6 +100,11 @@ $container-narrow-width: 760px;
   width: $container-narrow-width;
   margin-right: auto;
   margin-left: auto;
+}
+
+.standard-page {
+  width: 700px;
+  min-height: 100px;
 }
 
 $landing-page-width: 700px;
@@ -208,6 +211,19 @@ $landing-page-height: 280px;
   height: 60px;
 }
 
+.navbar-default .navbar-nav>li>a {
+  color: lighten( $colorPrimary, 8% );
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: $colorLight;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  color: darken( $colorHighlightPrimary, 12% );
+  background-color: $colorDark;
+}
+
 .navbar-brand {
   font-family: $fontFancyPrimary;
   font-weight: 100;
@@ -223,10 +239,6 @@ $landing-page-height: 280px;
   font-family: $fontPrintPrimary;
   font-size: 14px;
   font-weight: 100;
-}
-
-#nav-links a {
- // color: $colorBlack;
 }
 
 .btn {
@@ -263,12 +275,6 @@ $landing-page-height: 280px;
 .page-header {
   border-bottom: none;
   font-family: $fontBasePrimary;
-}
-
-.navbar {
-}
-
-.navbar-default {
 }
 
 .form-control {
@@ -391,6 +397,21 @@ section h3 {}
 section h4 {}
 
 section h5 {}
+
+section.standard-screen{
+  padding-top: 44px;
+  padding-bottom: 44px;
+  background-color: $colorDark;
+  color: $colorLight;
+}
+
+
+@media (max-width: 767px) {
+  section.standard-screen{
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
 
 section.big-screen{
   padding-top: 88px;
