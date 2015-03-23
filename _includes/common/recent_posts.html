@@ -1,25 +1,28 @@
 
-<div class="row">
+<div class="row recent-posts">
   {% for post in site.posts %}
   <div class="post-list">
-    <div class="col-md-8">
+    <div class="col-md-3">
+      <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+    </div><!-- /.col -->
+    <div class="col-md-9">
       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
         <p>{{ post.title }}</p>
       </a>
-    </div><!-- /.col -->
-    <div class="col-md-4">
-      <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
     </div><!-- /.col -->
   </div><!-- /.post-list-item -->
   {% endfor %}
 </div><!-- /.post-list -->
 
-<hr />
-
-<p class="all-posts">
-  <a href="{{ "/posts/" | prepend: site.baseurl }}">All Posts</a>
-</p>
-
-<p class="rss">
-  <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
-</p>
+<div class="row recent-posts-summary">
+  <div class="col-md-3">
+    <p class="rss">
+      <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
+    </p>
+  </div><!-- /.col -->
+  <div class="col-md-9">
+    <p class="all-posts">
+      <a href="{{ "/posts/" | prepend: site.baseurl }}">All Posts</a>
+    </p>
+  </div><!-- /.col -->
+</div><!-- /.row -->

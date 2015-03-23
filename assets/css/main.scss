@@ -38,8 +38,8 @@ $fontPrintPrimary: 'Arvo', Times, serif;
 $fontPrintSecondary: 'Roboto', Times, serif;
 
 /* font for script, cursive, or fancy rendering */
-@import url(http://fonts.googleapis.com/css?family=Lobster);
-$fontFancyPrimary: 'Lobster';
+@import url(http://fonts.googleapis.com/css?family=Kaushan+Script);
+$fontFancyPrimary: 'Kaushan Script';
 
 /* technical, typewriter, monospace font typically used for pre or code tags */
 @import url(http://fonts.googleapis.com/css?family=Inconsolata);
@@ -51,13 +51,14 @@ $fontMonoPrimary: 'Inconsolata', Courier, monospace;
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* base white or black colors or variants */
-$colorLight: #839496; /*muted color*/
+$colorLight: #acb8b9; /*muted color*/
 $colorDark: #002a35; /*solarized dark*/
 $colorDarkSecondary: #001;
 
 $colorPrimary: #333; /*steel blue*/
 $colorSecondary: #aaaaaa; /*gray*/
 $colorHighlightPrimary: #bf9000; /*medium yellow*/
+$colorHighlightSecondary: #eee;
 
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -140,6 +141,7 @@ $landing-page-height: 280px;
   font-family: $fontPrintPrimary;
   text-transform: none;
   text-align: center;
+  color: $colorHighlightSecondary;
 }
 
 .landing-intro {
@@ -161,8 +163,15 @@ $landing-page-height: 280px;
 
 .homepage-navigation-links-list {
   padding-top: 9px;
-  font-size: 12px;
+  font-size: 14px;
   text-transform: lowercase;
+}
+
+.homepage-navigation-links-list a {
+  color: $colorHighlightSecondary;
+}
+.homepage-navigation-links-list a:hover {
+  color: $colorHighlightPrimary;
 }
 
 @media (max-width: 767px) {
@@ -449,6 +458,15 @@ section.big-screen{
   padding-bottom: 88px;
   background-color: $colorDark;
   color: $colorLight;
+
+  background-attachment: scroll;
+  background-image: url(/assets/img/bokeh.jpg);
+  background-position: center center;
+  background-repeat: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 
 
