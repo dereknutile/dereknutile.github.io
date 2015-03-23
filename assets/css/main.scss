@@ -102,17 +102,19 @@ $container-narrow-width: 760px;
   margin-left: auto;
 }
 
-.standard-page {
-  width: 700px;
+$page-section-width: 700px;
+$page-section-height: 100px;
+$page-section-lg-width: 700px;
+$page-section-lg-height: $page-section-height * 3;
+
+.page-section {
+  width: $page-section-lg-width;
   min-height: 100px;
 }
 
-$landing-page-width: 700px;
-$landing-page-height: 280px;
-
-.landing-page {
-  width: $landing-page-width;
-  min-height: $landing-page-height;
+.page-section-lg {
+  width: $page-section-lg-width;
+  min-height: $page-section-lg-height;
 }
 
 .landing-title {
@@ -137,7 +139,7 @@ $landing-page-height: 280px;
 }
 
 .homepage-navigation-links {
-  width: $landing-page-width;
+  width: $page-section-lg-width;
   top: 400px;
   position: absolute;
   text-align: center;
@@ -157,12 +159,17 @@ $landing-page-height: 280px;
 }
 
 @media (max-width: 767px) {
-  $landing-page-width-device: 100%;
-  $landing-page-height-device: 200px;
+  $page-section-lg-width-device: 100%;
+  $page-section-lg-height-device: 200px;
 
-  .landing-page{
-    width: $landing-page-width-device;
-    min-height: $landing-page-height-device;
+  .page-section{
+    width: $page-section-lg-width-device;
+    min-height: $page-section-lg-height-device - 100;
+  }
+
+  .page-section-lg{
+    width: $page-section-lg-width-device;
+    min-height: $page-section-lg-height-device;
   }
 
   .landing-title {
@@ -180,8 +187,8 @@ $landing-page-height: 280px;
   }
 
   .homepage-navigation-links {
-    width: $landing-page-width-device;
-    top: $landing-page-height-device;
+    width: $page-section-lg-width-device;
+    top: $page-section-lg-height-device;
     position: absolute;
     text-align: center;
   }
@@ -398,7 +405,7 @@ section h4 {}
 
 section h5 {}
 
-section.standard-screen{
+section.header-banner{
   padding-top: 44px;
   padding-bottom: 44px;
   background-color: $colorDark;
@@ -407,13 +414,13 @@ section.standard-screen{
 
 
 @media (max-width: 767px) {
-  section.standard-screen{
+  section.header-banner{
     padding-top: 16px;
     padding-bottom: 16px;
   }
 }
 
-section.big-screen{
+section.header-banner-lg{
   padding-top: 88px;
   padding-bottom: 88px;
   background-color: $colorDark;
@@ -422,7 +429,7 @@ section.big-screen{
 
 
 @media (max-width: 767px) {
-  section.big-screen{
+  section.header-banner-lg{
     padding-top: 22px;
     padding-bottom: 22px;
   }
