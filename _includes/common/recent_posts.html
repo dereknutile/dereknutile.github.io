@@ -1,7 +1,7 @@
 
-<div class="row recent-posts">
+<div class="recent-posts">
   {% for post in site.posts %}
-  <div class="post-list">
+  <div class="row post-list-item">
     <div class="col-md-3">
       <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
     </div><!-- /.col -->
@@ -12,12 +12,12 @@
     </div><!-- /.col -->
   </div><!-- /.post-list-item -->
   {% endfor %}
-</div><!-- /.post-list -->
+</div><!-- /.recent-posts -->
 
 <div class="row recent-posts-summary">
   <div class="col-md-3">
     <p class="rss">
-      <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
+      <a href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="fa fa-rss"></i> RSS</a>
     </p>
   </div><!-- /.col -->
   <div class="col-md-9">

@@ -4,25 +4,6 @@
 @charset "utf-8";
 
 
-/*// Width of the content area
-$content-width: 800px;
-$on-palm: 600px;
-$on-laptop: 800px;
-
-// Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-  @media screen and (max-width: $device) {
-    @content;
-  }
-}*/
-
-
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* fonts
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -51,12 +32,12 @@ $fontMonoPrimary: 'Inconsolata', Courier, monospace;
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* base white or black colors or variants */
-$colorLight: #acb8b9; /*muted color*/
-$colorDark: #002a35; /*solarized dark*/
-$colorDarkSecondary: #001;
+$colorLight: #fdfdfd; /*pale white*/
+$colorDark: #001;
+$colorBlack: #27343d; /*dark slate*/
 
-$colorPrimary: #333; /*steel blue*/
-$colorSecondary: #aaaaaa; /*gray*/
+$colorPrimary: #222222; /*black-gray*/
+$colorSecondary: #4882ad; /*steel blue*/
 $colorHighlightPrimary: #bf9000; /*medium yellow*/
 $colorHighlightSecondary: #eee;
 
@@ -76,11 +57,6 @@ body {
   font-family: $fontBasePrimary;
 }
 
-body.body-navbar-padding {
-  /* bump for Bootstrap menu  navigation */
-   padding-top: 64px;
-}
-
 h1, h2, h3, h4, h5, h6 {
 }
 
@@ -93,7 +69,10 @@ p, ul, ol {
 
 /* links */
 a { color: $colorHighlightPrimary; }
-a:hover { color: $colorHighlightPrimary; }
+a:hover {
+  color: darken( $colorHighlightPrimary, 15% );
+  text-decoration: none;
+}
 a:visited { color: $colorHighlightPrimary; }
 
 
@@ -135,8 +114,8 @@ $landing-page-height: 280px;
 
 .landing-title {
   font-size: 36px;
-  font-weight: 200;
-  padding-top: 20px;
+  font-weight: 400;
+  padding-top: 36px;
   padding-bottom: 20px;
   font-family: $fontPrintPrimary;
   text-transform: none;
@@ -223,7 +202,10 @@ $landing-page-height: 280px;
   padding-right: 0px;
 }
 
-.navbar-default .navbar-brand {
+.navbar-default {
+  background-color: $colorDark;
+  border-color: $colorDark;
+  height: 60px;
 }
 
 .navbar-brand {
@@ -232,24 +214,19 @@ $landing-page-height: 280px;
   font-size: 26px;
 }
 
-.navbar-phone a {
-  float: right;
-  height: 50px;
-  padding: 15px 5px;
-  line-height: 20px;
-  font-weight: 100;
-  color: $colorPrimary;
-}
-
-.navbar-phone a:hover {
-  text-decoration: none;
-  color: $colorHighlightPrimary;
+.navbar-logo {
+  height: 30px;
+  width: 30px;
 }
 
 #nav-links {
   font-family: $fontPrintPrimary;
   font-size: 14px;
   font-weight: 100;
+}
+
+#nav-links a {
+ // color: $colorBlack;
 }
 
 .btn {
@@ -323,54 +300,16 @@ footer {
   background-color: $colorDark;
   background-attachment: relative;
   background-position: top center;
-  min-height: 350px;
+  min-height: 128px;
   width: 100%;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding: 64px 0 48px;
-  color: $colorLight;
-  font-family: $fontPrintSecondary;
-}
-
-footer p, footer ul, footer ol, footer address {
-  font-size: 16px;
-  line-height: 20px;
-  padding-left: 0px;
-}
-
-footer h3 {
+  padding: 48px 0 36px;
   font-family: $fontBasePrimary;
-  font-size: 16px;
-  font-weight: 400;
 }
 
-#footer a {
-  color: $colorHighlightPrimary;
-}
-
-#footer-social a {
+footer p.copyright {
+  text-align: center;
+  font-size: 14px;
   color: $colorLight;
-}
-
-#footer-links a {
-  color: $colorLight;
-}
-
-#footer-links .active a {
-  text-decoration: underline;
-}
-
-.footer-copyright {
-  margin-top: 8px;
-  font-size: 12px;
-  font-weight: 100;
-  color: $colorPrimary;
 }
 
 /*****************************************************************************/
@@ -458,15 +397,6 @@ section.big-screen{
   padding-bottom: 88px;
   background-color: $colorDark;
   color: $colorLight;
-
-  background-attachment: scroll;
-  background-image: url(/assets/img/bokeh.jpg);
-  background-position: center center;
-  background-repeat: none;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
 }
 
 
@@ -475,4 +405,28 @@ section.big-screen{
     padding-top: 22px;
     padding-bottom: 22px;
   }
+}
+
+.text-shadow-dark {
+  text-shadow: 1px 1px 1px darken( $colorDark, 10% );
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* post list
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.recent-posts {
+  margin-top: 18px;
+}
+
+.post-list-item {
+  border-top: 1px solid darken( $colorLight, 15% );
+  background-color: $colorLight;
+  padding-top: 8px;
+  padding-bottom: 4px;
+}
+
+.recent-posts-summary {
+  padding-top: 12px;
+  border-top: 1px solid darken( $colorLight, 15% );
+  background-color: darken( $colorLight, 10% );
 }
