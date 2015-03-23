@@ -1,16 +1,20 @@
 
-<ul class="post-list">
+<div class="row">
   {% for post in site.posts %}
-  <li>
-    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-    <h2>
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    </h2>
-  </li>
+  <div class="post-list">
+    <div class="col-md-8">
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+        <p>{{ post.title }}</p>
+      </a>
+    </div><!-- /.col -->
+    <div class="col-md-4">
+      <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+    </div><!-- /.col -->
+  </div><!-- /.post-list-item -->
   {% endfor %}
-</ul><!-- /.post-list -->
+</div><!-- /.post-list -->
 
+<hr />
 
 <p class="all-posts">
   <a href="{{ "/posts/" | prepend: site.baseurl }}">All Posts</a>

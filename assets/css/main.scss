@@ -166,9 +166,12 @@ $landing-page-height: 280px;
 }
 
 @media (max-width: 767px) {
+  $landing-page-width-device: 100%;
+  $landing-page-height-device: 200px;
+
   .landing-page{
-    width: 100%;
-    min-height: 200px;
+    width: $landing-page-width-device;
+    min-height: $landing-page-height-device;
   }
 
   .landing-title {
@@ -183,6 +186,13 @@ $landing-page-height: 280px;
     font-weight: 100;
     padding-top: 9px;
     padding-bottom: 9px;
+  }
+
+  .homepage-navigation-links {
+    width: $landing-page-width-device;
+    top: $landing-page-height-device;
+    position: absolute;
+    text-align: center;
   }
 }
 
@@ -439,4 +449,12 @@ section.big-screen{
   padding-bottom: 88px;
   background-color: $colorDark;
   color: $colorLight;
+}
+
+
+@media (max-width: 767px) {
+  section.big-screen{
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
 }
