@@ -17,9 +17,9 @@
 
       <ul class="nav navbar-nav navbar-right" id="nav-links">
 
+        <li{% if page.navbar == 'resume' %} class="active"{% endif %}><a href="{{ site.baseurl }}/resume">What I Do</a></li>
+        <li{% if page.navbar == 'skills' %} class="active"{% endif %}><a href="{{ site.baseurl }}/skills">What I Know</a></li>
         <li{% if page.navbar == 'about' %} class="active"{% endif %}><a href="{{ site.baseurl }}/about">About</a></li>
-        <li{% if page.navbar == 'resume' %} class="active"{% endif %}><a href="{{ site.baseurl }}/resume">Resume</a></li>
-        <li{% if page.navbar == 'skills' %} class="active"{% endif %}><a href="{{ site.baseurl }}/skills">Skills</a></li>
         <li{% if page.navbar == 'contact' %} class="active"{% endif %}><a href="{{ site.baseurl }}/contact">Contact</a></li>
         <li{% if page.navbar == 'blog' %} class="active"{% endif %}><a href="{{ site.baseurl }}/blog">Blog</a></li>
       </ul><!-- /#nav-links -->

@@ -1,11 +1,19 @@
 ---
 layout: default
 ---
-<div class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
+<section class="palette standard-screen">
+<div class="container standard-page">
+  <div class="row">
+    <header class="post-header">
+      <h1 class="post-title">{{ page.title }}</h1>
+      <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    </header>
+  </div><!-- /.row -->
+</div><!-- /.container -->
+</section>
+
+<div class="copy">
 
   <article class="post-content">
     {{ content }}

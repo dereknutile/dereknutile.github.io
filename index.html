@@ -1,19 +1,21 @@
 ---
-layout: lander
+layout: default
 ---
 
-<section class="palette jumbotron">
-<div class="container">
+<section class="palette big-screen">
+<div class="container landing-page">
   <div class="row">
-    <h1 class="title">{{ site.title }}</h1>
+    <h1 class="landing-title text-shadow-dark">Hi, I'm {{ site.title }}</h1>
+    <h3 class="landing-intro">developer polyglot</h3>
   </div><!-- /.row -->
 </div><!-- /.container -->
 </section>
 
 <section class="palette">
-<div class="container">
+<div class="container landing-page">
+  <h3>Recent Posts</h3>
   <div class="row">
-  <p>Website currently being updated.</p>
+    {% include common/recent_posts.html %}
   </div><!-- /.row -->
 </div><!-- /.container -->
 </section>
