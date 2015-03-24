@@ -1,6 +1,6 @@
 
 <div class="recent-posts">
-  {% for post in site.posts %}
+  {% for post in site.posts limit:5 %}
   <div class="row post-list-item">
     <div class="col-md-3">
       <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
