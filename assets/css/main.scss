@@ -458,3 +458,7 @@ section.header-banner-lg{
   border-top: 1px solid darken( $colorLight, 15% );
   background-color: darken( $colorLight, 10% );
 }
+
+.fa-inverse {
+  color: darken( $colorLight, 33% );
+}
