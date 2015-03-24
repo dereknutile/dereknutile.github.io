@@ -420,6 +420,21 @@ section.header-banner{
   }
 }
 
+section.subheader-banner{
+  padding-top: 36px;
+  padding-bottom: 36px;
+  background-color: lighten( $colorBlack, 8% );
+  color: $colorDark;
+}
+
+
+@media (max-width: 767px) {
+  section.subheader-banner{
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
 section.header-banner-lg{
   padding-top: 88px;
   padding-bottom: 88px;
