@@ -231,6 +231,11 @@ $page-section-lg-height: $page-section-height * 3;
   background-color: $colorDark;
 }
 
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: $colorDark;
+  background-color: $colorDark;
+}
+
 .navbar-brand {
   font-family: $fontFancyPrimary;
   font-weight: 100;
