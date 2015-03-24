@@ -1,1 +1,4 @@
-// custom js goes here
+
+$(document).ready(function(){
+  // cool code goes here!
+});
