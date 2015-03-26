@@ -7,9 +7,9 @@ $(document).ready(function(){
   function swapText() {
     ++textIndex;
     text.eq(textIndex % text.length)
-      .fadeIn(900)
-      .delay(1200)
-      .fadeOut(1200, swapText);
+      .fadeIn(1400)
+      .delay(1600)
+      .fadeOut(900, swapText);
   }
 
   swapText();
