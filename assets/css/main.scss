@@ -234,6 +234,7 @@ $page-section-lg-height: $page-section-height * 3;
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
   border-color: $colorDark;
   background-color: $colorDark;
+
 }
 
 .navbar-brand {
@@ -272,9 +273,6 @@ $page-section-lg-height: $page-section-height * 3;
 .btn-lg, .btn-group-lg>.btn {
   padding: 12px;
   font-size: 20px;
-}
-
-#footer {
 }
 
 .jumbotron {
@@ -322,10 +320,11 @@ footer {
   width: 100%;
   padding: 48px 0 36px;
   font-family: $fontBasePrimary;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 footer p.copyright {
-  text-align: center;
   font-size: 13px;
   color: darken( $colorLight, 10% );
 }
