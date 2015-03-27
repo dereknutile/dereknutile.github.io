@@ -12,7 +12,7 @@ $(document).ready(function(){
 
 
     function clearSessionDisplays () {
-        $('.sessionDisplays').empty().hide();
+        $('.sessionDisplays').empty().fadeOut(300);
         $('.event-presenters').show();
     }
 

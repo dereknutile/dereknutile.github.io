@@ -297,7 +297,7 @@ $page-section-lg-height: $page-section-height * 3;
   font-family: $fontPrintPrimary;
   line-height: 1.42857143;
   color: $colorPrimary;
-  background-color: $colorLight;
+  background-color: $colorHighlightSecondary;
   background-image: none;
   border: 1px solid $colorPrimary;
   border-radius: 0px;
@@ -492,4 +492,19 @@ section.header-banner-lg{
 
 .swap-text {
   display: none;
+}
+
+.skill-title, .skill-title a {
+  font-size: 12px;
+  color: $colorPrimary;
+}
+
+.skill-category {
+  font-size: 12px;
+  color: lighten( $colorBlack, 12% );
+}
+
+.skills-row {
+  border-bottom: 1px solid $colorHighlightPrimary;
+  padding-top: 4px;
 }
