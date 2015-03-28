@@ -1,5 +1,34 @@
 ---
-layout: none
+layout: default
 ---
 
-<h1>Coming ...</h1>
+<section class="palette header-banner-lg">
+<div class="container page-section-lg">
+  <div class="row">
+    <h1 class="landing-title text-shadow-dark">Hi, I'm {{ site.title }}</h1>
+    <h3 class="landing-intro">I'm
+      <span class="swap-text animated fadeIn">a maker of web things&nbsp;</span>
+      <span class="swap-text animated fadeInRightBig">a frontend developer&nbsp;</span>
+      <span class="swap-text animated fadeInRightBig">a backend engineer&nbsp;</span>
+      <span class="swap-text animated fadeInRightBig">a devops administrator&nbsp;</span>
+      <span class="swap-text animated fadeInRightBig">a full-stack dev&nbsp;</span>
+      <span class="swap-text animated fadeInRightBig">a programming polyglot&nbsp;</span>
+      <span class="swap-text animated bounceInUp"><a href="/skills">possibly a unicorn</a>?&nbsp;</span>
+      <span class="swap-text animated fadeInRightBig">organized&nbsp;</span>
+      <span class="swap-text animated fadeInRightBig">communicative&nbsp;</span>
+      <span class="swap-text animated fadeInRightBig">an efficiency expert&nbsp;</span>
+      <span class="swap-text animated fadeInRightBig">a husband and dad&nbsp;</span>
+      <span class="swap-text animated fadeInRightBig">a runner&nbsp;</span>
+    </h3>
+  </div><!-- /.row -->
+</div><!-- /.container -->
+</section>
+
+<section class="palette">
+<div class="container page-section">
+  <h3>Recent Posts</h3>
+  <div class="row">
+    {% include common/recent_posts.html %}
+  </div><!-- /.row -->
+</div><!-- /.container -->
+</section>
