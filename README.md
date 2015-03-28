@@ -1,2 +1,3 @@
-# new-dereknutile.github.io
-Dereknutile.com redesign 2015.
+# Dereknutile.com Website
+
+Personal website: [dereknutile.com](dereknutile.com)
