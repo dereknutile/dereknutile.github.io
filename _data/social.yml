@@ -14,11 +14,6 @@
   large_icon: fa fa-2x fa-google-plus
   title: GooglePlus
 
-- url: http://stackoverflow.com/users/1410480/derek-nutile
-  icon: fa fa-1x fa-stack-overflow
-  large_icon: fa fa-2x fa-stack-overflow
-  title: StackoverFlow
-
 - url: http://codepen.io/dereknutile/
   icon: fa fa-1x fa-codepen
   large_icon: fa fa-2x fa-codepen
