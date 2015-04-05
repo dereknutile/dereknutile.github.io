@@ -8,27 +8,8 @@ permalink: "/blog/"
 <section class="palette blog">
 <div class="container page-section">
   <div class="row">
-    <h3>Recent Posts</h3>
-      {% include common/recent_posts.html %}
-      <hr />
-
-      {% if site.posts %}
-
-      {% for post in site.posts %}
-      {% if post.published %}
-      <p>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-          {% if post.date %}
-            <em>&nbsp;posted on {{ post.date | date_to_string }}</em>
-          {% endif %}
-        </p>
-      {% endif %}
-      {% endfor %}
-
-      {% else %}
-      <p>No Notes</p>
-      {% endif %}
-
+    <h3>All Blog Posts</h3>
+      {% include common/all_posts.html %}
   </div><!-- /.row -->
 </div><!-- /.page-section -->
 </section><!-- /.blog -->
