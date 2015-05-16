@@ -1,3 +1,3 @@
 # Dereknutile.com Website
 
-Personal website: [dereknutile.com](http://dereknutile.com)
+Personal and professional website for [dereknutile.com](http://dereknutile.com).
