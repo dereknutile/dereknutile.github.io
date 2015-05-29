@@ -219,7 +219,7 @@ $page-section-lg-height: $page-section-height * 3;
 }
 
 .navbar-default .navbar-nav>li>a {
-  color: lighten( $colorPrimary, 8% );
+  color: darken( $colorLight, 25% );
 }
 
 .navbar-default .navbar-nav>li>a:hover {
