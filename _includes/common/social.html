@@ -17,21 +17,3 @@
 
 </ul>
 {% endif %}
-
-
-{% if site.data.social %}
-<ul class="list-unstyled">
-
-{% for socialLink in site.data.social %}
-  {% if socialLink.icon %}
-    <li class="visible-xs visible-sm">
-      <a href="{{ socialLink.url }}" target="_blank">
-        <i class="{{ socialLink.icon }} fa-stack" title="{{ socialLink.title }}"></i>&nbsp;
-        {{ socialLink.title }}
-      </a>
-    </li>
-  {% endif %}
-{% endfor %}
-
-</ul>
-{% endif %}
