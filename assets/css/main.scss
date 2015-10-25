@@ -75,10 +75,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p, ul, ol {
-  font-size: 16px;
+  font-size: 1.25rem;
   font-weight: 100;
   font-family: $fontBasePrimary;
-  line-height: 24px;
+  line-height: 1.5rem;
 }
 
 /* links */
@@ -90,7 +90,7 @@ a:hover {
 a:visited { color: lighten( $colorBlack, 8% ); }
 
 .content{
-  border-top: 64px solid $colorDark;
+  border-top: 3em solid $colorDark;
 }
 
 /*****************************************************************************/
@@ -294,6 +294,8 @@ $page-section-lg-height: $page-section-height * 3;
 }
 
 .lead {
+  font-size: 1.35rem;
+  line-height: 1.75rem;
 }
 
 .page-header {
@@ -454,8 +456,8 @@ section.subheader-banner{
 }
 
 section.header-banner-lg{
-  padding-top: 88px;
-  padding-bottom: 88px;
+  padding-top: 4em;
+  padding-bottom: 4em;
   background-color: $colorDark;
   color: $colorLight;
 }
