@@ -23,14 +23,14 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* common or base font */
-@import url(http://fonts.googleapis.com/css?family=Lato);
-$fontBasePrimary: 'Lato', Helvetica, Arial, sans-serif;
+@import url(http://fonts.googleapis.com/css?family=Dosis);
+$fontBasePrimary: 'Dosis', Helvetica, Arial, sans-serif;
 
 /* secondary or print font */
-@import url(http://fonts.googleapis.com/css?family=Arvo);
-$fontPrintPrimary: 'Arvo', Times, serif;
-@import url(http://fonts.googleapis.com/css?family=Roboto);
-$fontPrintSecondary: 'Roboto', Times, serif;
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+$fontPrintPrimary: 'Roboto Slab', Times, serif;
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+$fontPrintSecondary: 'Raleway', Times, serif;
 
 /* font for script, cursive, or fancy rendering */
 @import url(http://fonts.googleapis.com/css?family=Kaushan+Script);
