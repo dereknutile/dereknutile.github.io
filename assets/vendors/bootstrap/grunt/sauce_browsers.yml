@@ -31,6 +31,17 @@
     version: "9",
     platform: "Windows 7"
   },
+  {
+    browserName: "internet explorer",
+    version: "8",
+    platform: "Windows 7"
+  },
+
+  # { # Unofficial
+  #   browserName: "internet explorer",
+  #   version: "7",
+  #   platform: "Windows XP"
+  # },
 
   {
     browserName: "chrome",
@@ -62,10 +73,10 @@
   }
 
   # Android Chrome not currently supported by Sauce Labs
-  # Android v5.0+ not currently supported by Sauce Labs
-  # { # Android Browser
+
+  # { # Android Browser (super-unofficial)
   #   browserName: "android",
-  #   version: "5.0",
+  #   version: "4.0",
   #   platform: "Linux"
   # }
 ]

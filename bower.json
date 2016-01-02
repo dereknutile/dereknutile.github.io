@@ -1,6 +1,6 @@
 {
+  "version": "2016.1.0",
   "name": "dereknutile.com",
-  "version": "0.3.0",
   "homepage": "https://dereknutile.com/",
   "authors": [
     "Derek Nutile <dereknutile@gmail.com>"
@@ -16,10 +16,8 @@
     "tests"
   ],
   "dependencies": {
-    "animate.css": null,
     "jquery": "~2.1.4",
-    "bootstrap": "~4.0.0-alpha",
-    "fontawesome": "~4.5.0",
-    "list.js": "~1.1.1"
+    "bootstrap": "~3.3.6",
+    "fontawesome": "~4.5.0"
   }
 }
