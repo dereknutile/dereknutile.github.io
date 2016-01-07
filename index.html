@@ -28,13 +28,14 @@ layout: plain
                     <h2 class="section-header">About Me</h2>
                 </div>
                 <div class="col-lg-6">
-                    <h3>My Day Job</h3>
-                    <p>During business hours, I work for <a href="http://www.co.washington.or.us/" target="_blank">Washington County Oregon</a> as a Web System Adminstrator.</p>
+                    <h3>During Business Hours</h3>
+                    <p>At my day job, I work for <a href="http://www.co.washington.or.us/" target="_blank">Washington County Oregon</a> as a Web System Adminstrator.</p>
+                    <p>My core functions at the county are to keep the many web properties up and running and plan for the future while being mindful of our customers &mdash; the citizens of Washington County.</p>
                 </div>
                 <div class="col-lg-6">
-                    <h3>Free Time</h3>
+                    <h3>In My Free Time</h3>
                     <p>I'm married to a beautiful goddess and father to four kick-ass boys.</p>
-                    <p>When I'm not running, laughing, or playing, I develop freelance projects from start to delivery.</p>
+                    <p>When I'm not running, laughing, or playing, I develop freelance projects for small businesses, the open source community, and myself.  <a class="page-scroll" href="#contact">Contact me</a> if you're looking for help or guidance in your next project.</p>
 
                 </div>
             </div>
@@ -43,14 +44,51 @@ layout: plain
 </section>
 
 <!-- Download Section -->
-<section id="skillset" class="content-section text-center">
+<section id="skillset" class="content-section">
     <div class="full-section">
         <div class="container">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Download Grayscale</h2>
-                <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-                <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
+            <div class="col-lg-12">
+                <h2>I'm a Unicorn!</h2>
+                <p>I started my career in technology working with point-of-sale hardware and software and since then I've supported thousands of users at a large law firm, created internal helpdesk software and portals for clients, and worked independently and with agencies to create beautiful websites and applications.</p>
+                <p><a href="http://www.forbes.com/sites/oreillymedia/2014/04/11/full-stack-developer-is-a-tall-order-bordering-on-unicorn-territory/" target="_blank">Much has been written</a> about the elusive application developer who claims several areas of expertise.  I've created a simple filter below for you to review my skill set and ultimately decide if unicorns exist.</p>
+
             </div>
+
+            <div class="col-lg-8 col-lg-offset-2">
+                <div class="filter-skills-input-form">
+                  <form role="form">
+                    <div class="form-group">
+                       <input type="search" placeholder="Filter for 'php' or 'framework' for example ..." class="form-control" id="filter-skills">
+                    </div><!-- /.form-group -->
+                  </form>
+                </div><!-- /.filter-skills-input-form -->
+
+                <div class="row skills-list">
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <h5>Language/Framework/System<span class="hidden-md hidden-lg"> (tags)</span></h5>
+                  </div>
+                    <div class="col-lg-6 col-md-6 hidden-sm hidden-xs">
+                      <h5>Categories</h5>
+                    </div>
+                  {% for item in site.data.expertise %}
+                  <div class="skills-row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+                      {% if item.url %}
+                      <p class="skill-title"><a href="{{ item.url }}" target="_blank">{{ item.title }}</a><span class="hidden-md hidden-lg skill-category"> ({{ item.category }})</span></p>
+                      {% else %}
+                      <p class="skill-title">{{ item.title }}</p>
+                      {% endif %}
+
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 hidden-sm hidden-xs">
+                      <p class="skill-category">{{ item.category }}</p>
+                    </div>
+                  </div><!-- /.skills-row -->
+                  {% endfor %}
+                </div><!-- /.row skills-list -->
+            </div><!-- col-lg-8 col-lg-offset-2 -->
         </div>
     </div>
 </section>
@@ -61,10 +99,9 @@ layout: plain
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Contact Start Bootstrap</h2>
-                    <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
-                    <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
-                    </p>
+                    <h2>Contact or Hire Me</h2>
+                    <p>I'm open to 8-16 hours per week for projects.  I'm accurate with my advice and estimates.</p>
+                    <p>{% include common/email.html %}</p>
                     {% include common/social.html %}
                 </div>
             </div>

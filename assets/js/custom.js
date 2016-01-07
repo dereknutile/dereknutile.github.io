@@ -13,6 +13,8 @@ $(document).ready(function(){
   //
   // swapText();
 
+   $('input#filter-skills').quicksearch('.skills-row');
+
   // jQuery to collapse the navbar on scroll
   $(window).scroll(function() {
       if ($(".navbar").offset().top > 50) {

@@ -283,7 +283,7 @@ a:focus {
 }
 
 .content-section {
-    padding-top: 100px;
+    padding-top: 60px;
 }
 
 .full-section {
@@ -299,11 +299,12 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 200px;
+        padding-top: 40px;
+        padding-bottom: 220px;
     }
 
     .full-section {
-        padding: 100px 0;
+        padding: 80px 0;
     }
 
     #map {
@@ -433,7 +434,7 @@ body {
     background-image:
         linear-gradient(
         lighten( #000, 20% ),
-        lighten( #000, 8% )
+        lighten( #000, 12% )
     );
 }
 
@@ -448,4 +449,31 @@ ul.social-icons{
         padding-left: 0;
         list-style: initial;
     }
+}
+
+p.skill-title {
+  margin: 0;
+  font-size: 18px;
+}
+
+p.skill-category {
+  margin: 0;
+  font-size: 18px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #001;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #fff;
+    border-radius: 0px;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
