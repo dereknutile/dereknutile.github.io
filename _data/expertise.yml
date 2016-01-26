@@ -1,6 +1,6 @@
 
 - url: "http://www.w3.org/"
-  title: "HTML, CSS, Javascript"
+  title: "Web Development (html, css, Javascript)"
   category: "web development"
 
 - url: "http://jquery.com/"
@@ -28,11 +28,11 @@
   category: "javascript platform"
 
 - url: "https://angularjs.org/"
-  title: "AngularJs"
+  title: "Angular"
   category: "javascript mvc framework"
 
 - url: "http://emberjs.com/"
-  title: "EmberJs"
+  title: "Ember"
   category: "javascript mvc framework"
 
 - url: "http://jekyllrb.com/"
@@ -40,8 +40,12 @@
   category: "html markup"
 
 - url: "http://gruntjs.com/"
-  title: "GruntJs"
-  category: "javascript automation"
+  title: "Grunt"
+  category: "javascript automation automate workflow"
+
+- url: "http://gulpjs.com/"
+  title: "Gulp"
+  category: "javascript automation automate workflow"
 
 - url: "http://bower.io/"
   title: "Bower"
@@ -63,12 +67,16 @@
   title: "Rails (ROR)"
   category: "ruby framework"
 
-- url: ""
+- url: "https://msdn.microsoft.com/en-us/powershell"
   title: "Powershell, cscript, vbs, batch, bash"
-  category: "scripting"
+  category: "scripting command tasks"
 
-- url: ""
-  title: "SVN, GIT, HG, beanstalk"
+- url: "https://en.wikipedia.org/wiki/Scripting_language"
+  title: "Scripting (cscript, vbs, batch, bash)"
+  category: "scripting shell command tasks"
+
+- url: "https://en.wikipedia.org/wiki/Version_control"
+  title: "Source Control (subversion, git, mercurial, beanstalk"
   category: "source control"
 
 - url: "http://ellislab.com/codeigniter"
@@ -95,7 +103,7 @@
   title: "Drupal"
   category: "php cms"
 
-- url: ""
+- url: "https://en.wikipedia.org/wiki/Domain_Name_System"
   title: "DNS"
   category: "devops server networking"
 
@@ -155,16 +163,20 @@
   title: "Microsoft SQL SSIS"
   category: "sql data programming"
 
+- url: "https://msdn.microsoft.com/en-us/library/ms159106.aspx"
+  title: "Microsoft SQL SSRS"
+  category: "sql data reporting"
+
 - url: "https://www.docker.com/"
   title: "Docker"
-  category: "package distributed automation virtual"
+  category: "package distributed automation automate workflow virtual"
 
 - url: "http://www.vagrantup.com/"
   title: "Vagrant"
-  category: "environment distributed automation virtual"
+  category: "environment distributed automation automate workflow virtual"
 
 - url: "http://handlebarsjs.com/"
-  title: "HandlebarsJs"
+  title: "Handlebars"
   category: "semantic template mustache javascript"
 
 - url: "http://liquidmarkup.org/"
