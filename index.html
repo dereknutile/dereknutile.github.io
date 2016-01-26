@@ -63,31 +63,8 @@ layout: plain
                   </form>
                 </div><!-- /.filter-skills-input-form -->
 
-                <div class="row skills-list">
-                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <h5>Language/Framework/System<span class="hidden-md hidden-lg"> (tags)</span></h5>
-                  </div>
-                    <div class="col-lg-6 col-md-6 hidden-sm hidden-xs">
-                      <h5>Categories</h5>
-                    </div>
-                  {% for item in site.data.expertise %}
-                  <div class="skills-row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-
-                      {% if item.url %}
-                      <p class="skill-title"><a href="{{ item.url }}" target="_blank">{{ item.title }}</a><span class="hidden-md hidden-lg skill-category"> ({{ item.category }})</span></p>
-                      {% else %}
-                      <p class="skill-title">{{ item.title }}</p>
-                      {% endif %}
-
-                    </div>
-
-                    <div class="col-lg-6 col-md-6 hidden-sm hidden-xs">
-                      <p class="skill-category">{{ item.category }}</p>
-                    </div>
-                  </div><!-- /.skills-row -->
-                  {% endfor %}
-                </div><!-- /.row skills-list -->
+                {% include common/skillset.html %}
+                
             </div><!-- col-lg-8 col-lg-offset-2 -->
         </div>
     </div>
