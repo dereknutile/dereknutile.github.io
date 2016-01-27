@@ -167,6 +167,10 @@
   title: "Microsoft SQL SSRS"
   category: "sql data reporting"
 
+- url: "https://msdn.microsoft.com/en-us/library/bb522607.aspx"
+  title: "Microsoft SQL SSAS"
+  category: "sql data reporting analysis business analytics"
+
 - url: "https://www.docker.com/"
   title: "Docker"
   category: "package distributed automation automate workflow virtual"
