@@ -1,11 +1,11 @@
 
 {% if site.data.social %}
-<ul class="list-inline">
+<ul class="list-inline text-center">
 
 {% for socialLink in site.data.social %}
   {% if socialLink.icon %}
     <li>
-      <a href="{{ socialLink.url }}" class="btn btn-default btn-lg" target="_blank">
+      <a href="{{ socialLink.url }}" class="btn btn-social" target="_blank">
         <i class="{{ socialLink.icon }}" title="{{ socialLink.title }}"></i>
       </a>
     </li>

@@ -1,6 +1,18 @@
 
-<div class="row skills-list">
+<h3>Skill Menu</h3>
+
+<div class="row filter-skills-input-form">
+  <form role="form">
+    <div class="form-group">
+       <input type="search" placeholder="Filter for 'php' or 'framework' for example ..." class="search-box" id="filter-skills">
+    </div><!-- /.form-group -->
+  </form>
+</div><!-- /.filter-skills-input-form -->
+
+<div class="skills-list">
   {% for item in site.data.expertise %}
-  <a href="{{ item.url }}" class="skill skills-row" target="_blank">[{{ item.title }}]<span class="hidden"> ({{ item.category }})</span></a>
+  <div class="skill">
+  <a href="{{ item.url }}" class="skill skills-row" target="_blank">{{ item.title }}<span class="hidden"> ({{ item.category }})</span></a>
+  </div><!-- /.skill -->
   {% endfor %}
-</div><!-- /.row skills-list -->
+</div><!-- /.skills-list -->
