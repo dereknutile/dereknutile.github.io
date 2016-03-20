@@ -10,8 +10,8 @@
   title: LinkedIn
 
 - url: https://plus.google.com/+DerekNutile
-  icon: fa fa-1x fa-google-plus
-  large_icon: fa fa-2x fa-google-plus
+  icon: fa fa-1x fa-google
+  large_icon: fa fa-2x fa-google
   title: GooglePlus
 
 - url: http://codepen.io/dereknutile/
