@@ -23,6 +23,7 @@ $serifFont2: "Raleway", Georgia, Times, "Times New Roman", serif;
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 $primaryDark1: #001;
 $primaryDark2: rgba(0,0,0,0.19);
+$primaryDark3: #aaa;
 
 $primaryLight1: #fff;
 $primaryLight2: #efeae1;
@@ -40,6 +41,7 @@ html {
 
 body {
     background-color: $primaryLight2;
+    background: url("/assets/img/vertical_cloth.png");
 }
 
 h1,
@@ -202,7 +204,7 @@ a.skill {
 footer.site-footer {
     padding: 2em 0;
     font-size: .75em;
-    color: darken( $primaryDark2, 70% );
+    color: lighten( $primaryDark3, 6% );
 }
 
 ul.list-inline {
