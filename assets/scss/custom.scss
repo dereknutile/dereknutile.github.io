@@ -25,9 +25,9 @@ $primaryDark1: #001;
 $primaryDark2: rgba(0,0,0,0.19);
 
 $primaryLight1: #fff;
-$primaryLight2: #fbfdec;
+$primaryLight2: #efeae1;
 
-$primaryLink: #563d7c;
+$primaryLink: #008cdd;
 $primaryLink2: #1d9b6c;
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -60,6 +60,7 @@ p {
 
 a {
     color: $primaryLink;
+    text-decoration: none;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -89,7 +90,7 @@ section {
 }
 
 .container-narrow {
-    width: 80%;
+    width: 85%;
     max-width: 768px;
 }
 
