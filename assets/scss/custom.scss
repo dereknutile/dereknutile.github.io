@@ -26,7 +26,7 @@ $primaryDark2: rgba(0,0,0,0.19);
 $primaryDark3: #aaa;
 
 $primaryLight1: #fff;
-$primaryLight2: #efeae1;
+$primaryLight2: #4487af;
 
 $primaryLink: #008cdd;
 $primaryLink2: #1d9b6c;
@@ -41,7 +41,6 @@ html {
 
 body {
     background-color: $primaryLight2;
-    background: url("/assets/img/vertical_cloth.png");
 }
 
 h1,
@@ -176,7 +175,7 @@ section {
     font-weight: 100;
     line-height: 1.42857143;
     color: $primaryDark1;
-    background-color: lighten( $primaryLight2, 12% );
+    background-color: #fff;
     background-image: none;
     border: 1px solid $primaryDark2;
     -webkit-box-shadow: inset 0 1px 1px $primaryDark2;
