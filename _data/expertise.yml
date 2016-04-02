@@ -1,19 +1,15 @@
 
 - url: "http://www.w3.org/"
   title: "Web Development (html, css, Javascript)"
-  category: "web development"
+  category: "web development html5 css3"
 
 - url: "http://jquery.com/"
   title: "jQuery"
   category: "javascript"
 
-- url: "http://lesscss.org/"
-  title: "LESS"
-  category: "css"
-
 - url: "http://sass-lang.com/"
   title: "SASS & SCSS"
-  category: "css scss"
+  category: "css scss less"
 
 - url: "http://www.php.net/"
   title: "PHP"
@@ -37,7 +33,7 @@
 
 - url: "http://jekyllrb.com/"
   title: "Jekyll"
-  category: "html markup"
+  category: "html markup markdown"
 
 - url: "http://gruntjs.com/"
   title: "Grunt"
@@ -76,7 +72,7 @@
   category: "scripting shell command tasks"
 
 - url: "https://en.wikipedia.org/wiki/Version_control"
-  title: "Source Control (subversion, git, mercurial, beanstalk"
+  title: "Source Control (subversion, git, mercurial, beanstalk)"
   category: "source control"
 
 - url: "http://ellislab.com/codeigniter"
@@ -121,7 +117,7 @@
 
 - url: "http://saml.xml.org/"
   title: "SAML OASIS"
-  category: "xml data"
+  category: "xml authentication single sign-on oauth"
 
 - url: "http://www.postfix.org/"
   title: "Postfix/SMTP"
@@ -136,7 +132,7 @@
   category: "web server"
 
 - url: "http://www.mysql.com/"
-  title: "MySQL"
+  title: "MySQL Maria"
   category: "sql database"
 
 - url: "http://www.postgresql.org/"
