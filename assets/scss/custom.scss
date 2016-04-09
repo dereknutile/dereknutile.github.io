@@ -260,7 +260,7 @@ ul.list-inline li {
     color: #fff;
 }
 
-.fixed-logo {
+.side-logo {
     top: 1em;
     left: 1em;
     z-index: 9999;
@@ -269,6 +269,11 @@ ul.list-inline li {
     height: 7em;
 }
 
-.fixed-logo img {
+.side-logo img {
     max-width: 100%;
+}
+
+.center-image {
+    display: block;
+    margin: 0 auto;
 }
