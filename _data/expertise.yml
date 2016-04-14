@@ -75,7 +75,7 @@
   title: "Source Control (subversion, git, mercurial, beanstalk)"
   category: "source control"
 
-- url: "http://ellislab.com/codeigniter"
+- url: "https://www.codeigniter.com/"
   title: "CodeIgniter"
   category: "php framework"
 
