@@ -206,12 +206,12 @@ section {
     font-size: .9em;
     font-weight: 100;
     line-height: 1.42857143;
-    color: $primaryDark1;
-    background-color: #fff;
+    background-color: lighten( $primaryDark3, 30% );
     background-image: none;
+    margin-bottom: .75em;
     border: 1px solid $primaryDark2;
-    -webkit-box-shadow: inset 0 1px 1px $primaryDark2;
-    box-shadow: inset 0 1px 1px $primaryDark2;
+    -webkit-box-shadow: none;
+    box-shadow: none;
     -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
     -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
@@ -226,6 +226,25 @@ a.skill {
 .skills-list {
     border: 1px solid $primaryDark2;
     padding: .5em;
+}
+
+.searchbar-inner-addon {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.searchbar-inner-addon input {
+    padding-right: 30px;
+}
+
+.searchbar-inner-addon i {
+    position: absolute;
+    right: 0px;
+    padding: 10px 12px;
+    pointer-events: none;
+    color: $primaryDark3;
+    font-size: .8em;
 }
 
 .text-center {
