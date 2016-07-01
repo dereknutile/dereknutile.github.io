@@ -5,7 +5,7 @@
 
 - url: "http://jquery.com/"
   title: "jQuery"
-  category: "javascript"
+  category: "javascript js"
 
 - url: "http://sass-lang.com/"
   title: "SASS & SCSS"
@@ -21,15 +21,19 @@
 
 - url: "http://nodejs.org/"
   title: "NodeJS"
-  category: "javascript platform"
+  category: "javascript js platform"
 
 - url: "https://angularjs.org/"
   title: "Angular"
-  category: "javascript mvc framework"
+  category: "javascript js mvc framework"
+
+- url: "https://angular.io/"
+  title: "Angular 2"
+  category: "javascript js mvc framework mobile desktop"
 
 - url: "http://emberjs.com/"
   title: "Ember"
-  category: "javascript mvc framework"
+  category: "javascript js mvc framework"
 
 - url: "http://jekyllrb.com/"
   title: "Jekyll"
@@ -37,11 +41,11 @@
 
 - url: "http://gruntjs.com/"
   title: "Grunt"
-  category: "javascript automation automate workflow"
+  category: "javascript js automation automate workflow"
 
 - url: "http://gulpjs.com/"
   title: "Gulp"
-  category: "javascript automation automate workflow"
+  category: "javascript js automation automate workflow"
 
 - url: "http://bower.io/"
   title: "Bower"
@@ -189,7 +193,7 @@
 
 - url: "http://expressjs.com/"
   title: "ExpressJS"
-  category: "node framework javascript"
+  category: "node framework javascript js"
 
 - url: "https://www.heroku.com"
   title: "Heroku"
@@ -198,3 +202,7 @@
 - url: "https://ellislab.com/expressionengine"
   title: "Expression Engine"
   category: "php framework cms"
+
+- url: "https://vuejs.org/"
+  title: "VueJS"
+  category: "javascript js reactive components interfaces"
