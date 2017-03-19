@@ -14,11 +14,6 @@
   large_icon: fa fa-2x fa-google
   title: GooglePlus
 
-- url: http://codepen.io/dereknutile/
-  icon: fa fa-1x fa-codepen
-  large_icon: fa fa-2x fa-codepen
-  title: Codepen
-
 - url: https://bitbucket.org/dereknutile
   icon: fa fa-1x fa-bitbucket
   large_icon: fa fa-2x fa-bitbucket
