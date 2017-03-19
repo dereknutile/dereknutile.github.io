@@ -312,38 +312,29 @@ ul.list-inline li {
 }
 
 .side-logo {
-    top: 1em;
+    bottom: 1em;
     right: 1em;
     z-index: 9999;
     position: fixed;
-    width: 7em;
-    height: 7em;
+    width: 4em;
+    height: 4em;
 }
 
 @media(max-width: 768px) {
     .side-logo {
-        top: 0;
-        right: 0;
-        width: 5em;
-        height: 5em;
+        bottom: .5em;
+        right: .5em;
+        width: 3em;
+        height: 3em;
     }
 }
 
 @media(max-width: 640px) {
     .side-logo {
-        top: 0;
-        right: 0;
-        width: 4em;
-        height: 4em;
-    }
-}
-
-@media(max-width: 480px) {
-    .side-logo {
-        top: 0;
-        right: 0;
-        width: 3em;
-        height: 3em;
+        bottom: .5em;
+        right: .5em;
+        width: 2em;
+        height: 2em;
     }
 }
 
