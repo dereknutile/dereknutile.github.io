@@ -5,10 +5,10 @@
 
 - url: "http://jquery.com/"
   title: "jQuery"
-  category: "javascript js"
+  category: "javascript js dom"
 
 - url: "http://sass-lang.com/"
-  title: "SASS & SCSS"
+  title: "SASS"
   category: "css scss less"
 
 - url: "http://www.php.net/"
@@ -68,7 +68,7 @@
   category: "ruby framework"
 
 - url: "https://msdn.microsoft.com/en-us/powershell"
-  title: "Powershell, cscript, vbs, batch, bash"
+  title: "Powershell"
   category: "scripting command tasks"
 
 - url: "https://en.wikipedia.org/wiki/Scripting_language"
@@ -76,8 +76,8 @@
   category: "scripting shell command tasks"
 
 - url: "https://en.wikipedia.org/wiki/Version_control"
-  title: "Source Control (subversion, git, mercurial, beanstalk)"
-  category: "source control"
+  title: "Version Control (subversion, git, mercurial)"
+  category: "source control dvcs"
 
 - url: "https://www.codeigniter.com/"
   title: "CodeIgniter"
@@ -93,7 +93,7 @@
 
 - url: "http://magento.com/"
   title: "Magento"
-  category: "php ecommerce"
+  category: "php framework ecommerce"
 
 - url: "http://wordpress.org/"
   title: "Wordpress"
@@ -103,13 +103,9 @@
   title: "Drupal"
   category: "php cms"
 
-- url: "https://en.wikipedia.org/wiki/Domain_Name_System"
-  title: "DNS"
-  category: "devops server networking"
-
 - url: "http://aws.amazon.com/"
   title: "Amazon AWS"
-  category: "web service cloud"
+  category: "web service cloud s3 ec2 cloud"
 
 - url: "http://www.rackspace.com/"
   title: "Rackspace"
@@ -120,12 +116,16 @@
   category: "web service cloud"
 
 - url: "http://saml.xml.org/"
-  title: "SAML OASIS"
-  category: "xml authentication single sign-on oauth"
+  title: "OASIS SAML2"
+  category: "xml authentication single sign-on oauth security assertion markup language "
 
 - url: "http://www.postfix.org/"
-  title: "Postfix/SMTP"
+  title: "SMTP Postfix"
   category: "mail postfix sendmail"
+
+- url: "https://www.iis.net/"
+  title: "Microsoft IIS"
+  category: "web server"
 
 - url: "http://httpd.apache.org/"
   title: "Apache"
@@ -152,8 +152,8 @@
   category: "sql database nosql"
 
 - url: "http://www.microsoft.com/net"
-  title: ".net"
-  category: "windows programming"
+  title: ".Net"
+  category: "windows programming dotnet"
 
 - url: "http://www.microsoft.com/sql"
   title: "Microsoft SQL Server"
@@ -167,21 +167,13 @@
   title: "Microsoft SQL SSRS"
   category: "sql data reporting"
 
-- url: "https://msdn.microsoft.com/en-us/library/bb522607.aspx"
-  title: "Microsoft SQL SSAS"
-  category: "sql data reporting analysis business analytics"
-
 - url: "https://www.docker.com/"
   title: "Docker"
-  category: "package distributed automation automate workflow virtual"
+  category: "containers package distributed automation automate workflow virtual"
 
 - url: "http://www.vagrantup.com/"
   title: "Vagrant"
   category: "environment distributed automation automate workflow virtual"
-
-- url: "http://handlebarsjs.com/"
-  title: "Handlebars"
-  category: "semantic template mustache javascript"
 
 - url: "http://liquidmarkup.org/"
   title: "Liquid"
