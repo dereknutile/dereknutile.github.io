@@ -23,12 +23,8 @@
   title: "NodeJS"
   category: "javascript js platform"
 
-- url: "https://angularjs.org/"
-  title: "Angular"
-  category: "javascript js mvc framework"
-
 - url: "https://angular.io/"
-  title: "Angular 2"
+  title: "Angular"
   category: "javascript js mvc framework mobile desktop"
 
 - url: "http://emberjs.com/"
