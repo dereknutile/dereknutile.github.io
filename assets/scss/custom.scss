@@ -27,6 +27,7 @@ $primaryDark3: #aaa;
 
 $primaryLight1: #fff;
 $primaryLight2: #4487af;
+$primaryLightBorder: whitesmoke;
 
 $primaryLink: #008cdd;
 $primaryLink2: #1d9b6c;
@@ -223,6 +224,10 @@ a.skill {
     font-family: $sansFont;
 }
 
+.skills-row {
+    border-bottom: 1px solid $primaryLightBorder;
+}
+
 .skills-list {
     border: 1px solid $primaryDark2;
     padding: .5em;
@@ -309,6 +314,7 @@ ul.list-inline li {
 .btn-social:hover {
     background-color: $primaryLink;
     color: #fff;
+    background: 1px solid $primaryLink;
 }
 
 .side-logo {
