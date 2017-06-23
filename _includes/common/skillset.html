@@ -1,22 +1,27 @@
 
 <h3>My Proficiencies</h3>
 
-<div class="row filter-skills-input-form">
-  <form role="form">
-    <div class="form-group">
-<div class="searchbar-inner-addon">
-    <i class="fa fa-filter"></i>
-    <input type="search" placeholder="Filter for 'php' or 'framework' for example ..." class="search-box" id="filter-skills">
-</div>
-
-    </div><!-- /.form-group -->
-  </form>
-</div><!-- /.filter-skills-input-form -->
-
 <div class="skills-list">
-  {% for item in site.data.expertise %}
-  <div class="skill">
-  <a href="{{ item.url }}" class="skill skills-row" target="_blank">{{ item.title }}<span class="hidden"> ({{ item.category }})</span></a>
-  </div><!-- /.skill -->
-  {% endfor %}
-</div><!-- /.skills-list -->
+    <div class="row filter-skills-input-form">
+        <form role="form">
+            <div class="form-group">
+                <div class="searchbar-inner-addon">
+                    <i class="fa fa-filter"></i>
+                    <input type="search" placeholder="Filter for 'php' or 'framework' for example ..." class="search-box" id="filter-skills">
+                </div>
+                <!-- /.searchbar -->
+            </div>
+            <!-- /.form-group -->
+        </form>
+    </div>
+    <!-- /.filter-skills-input-form -->
+
+    {% assign sorted_skills = (site.data.expertise | sort: 'title') %}
+    {% for item in sorted_skills %}
+    <div class="skills-row">
+        <a href="{{ item.url }}" class="skill" target="_blank">{{ item.title }}<span class="hidden"> ({{ item.category }})</span></a>
+    </div>
+    <!-- /.skill -->
+    {% endfor %}
+</div>
+<!-- /.skills-list -->
