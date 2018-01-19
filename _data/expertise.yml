@@ -101,7 +101,7 @@
 
 - url: "http://aws.amazon.com/"
   title: "Amazon AWS"
-  category: "web service cloud s3 ec2 cloud"
+  category: "web service cloud s3 ec2 cloud rekognition"
 
 - url: "http://www.rackspace.com/"
   title: "Rackspace"
