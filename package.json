@@ -1,0 +1,25 @@
+{
+  "name": "dereknutile.github.io",
+  "version": "1.0.0",
+  "description": "Personal and professional website for [Derek Nutile](http://dereknutile.com).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dereknutile/dereknutile.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dereknutile/dereknutile.github.io/issues"
+  },
+  "homepage": "https://github.com/dereknutile/dereknutile.github.io#readme",
+  "devDependencies": {
+    "uikit": "^3.0.0-beta.38",
+    "vue": "^2.5.13",
+    "webpack": "^3.10.0"
+  }
+}
