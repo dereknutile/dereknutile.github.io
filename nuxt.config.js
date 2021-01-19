@@ -27,7 +27,7 @@ export default {
   ** Customize the generated output folder
   */
   generate: {
-    dir: 'public'
+    dir: 'dist'
   },
   
   /*
